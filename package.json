@@ -1,0 +1,26 @@
+{
+  "name": "30-sorting-algorithms-research",
+  "version": "1.0.0",
+  "description": "Lab 30: Basic Sorting ===",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --forceExit",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jenwill/30-sorting-algorithms-research.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jenwill/30-sorting-algorithms-research/issues"
+  },
+  "homepage": "https://github.com/jenwill/30-sorting-algorithms-research#readme",
+  "dependencies": {
+    "eslint": "^4.19.1",
+    "eslint-plugin-jest": "^21.15.2",
+    "jest": "^23.0.0"
+  }
+}
