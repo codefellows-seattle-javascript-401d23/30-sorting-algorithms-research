@@ -14,4 +14,5 @@ function bubbleSort(array) {
 	}
   return array;
 }
+
 console.log(bubbleSort(array));
