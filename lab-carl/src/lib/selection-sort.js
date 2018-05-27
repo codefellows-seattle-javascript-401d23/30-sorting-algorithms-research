@@ -22,3 +22,5 @@ const selectionSort = (arr) => {
   }
   return arr;
 }
+
+export default selectionSort;

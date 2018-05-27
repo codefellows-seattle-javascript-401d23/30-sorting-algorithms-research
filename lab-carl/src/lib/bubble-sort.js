@@ -8,7 +8,7 @@ const bubbleSort = (arr) => {
   while (switched) {
     switched = false;
     for (let i = 1; i < arr.length; i++) {
-      if (arr[i] > arr[i - 1]) {
+      if (arr[i] < arr[i - 1]) {
         let temp = arr[i];
         arr[i] = arr[i - 1];
         arr[i - 1] = temp;
@@ -19,3 +19,5 @@ const bubbleSort = (arr) => {
 
   return arr;
 }
+
+export default bubbleSort;
