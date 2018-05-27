@@ -1,6 +1,6 @@
 'use strict';
 
-const bubbleSort = module.exports = (inputArray) => {
+const bubbleSort = module.exports = (inputArray) => { // eslint-disable-line
   const len = inputArray.length;
   let swapped = true;
   let temp;

@@ -1,6 +1,6 @@
 'use strict';
 
-const insertionSort = module.exports = (inputArray) => {
+const insertionSort = module.exports = (inputArray) => { // eslint-disable-line
   const len = inputArray.length;
   let temp;
 

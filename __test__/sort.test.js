@@ -42,3 +42,19 @@ describe('Insertion sort', () => {
   });
 });
 
+describe('Selection sort', () => {
+  test('Should correctly sort array of positive numbers', () => {
+    expect(selectionSort(array1)).toEqual([1, 1, 3, 3, 4, 5, 9, 230, 345, 500]);
+  });
+  test('Should correctly sort array of negative numbers', () => {
+    expect(selectionSort(array2)).toEqual([-2100, -800, -34, -23, -14, -6, -3]);
+  });
+  test('Should correctly sort array of positive and negative numbers', () => {
+    expect(selectionSort(array3)).toEqual([-34, -14, 0, 3, 6, 23, 800, 2100]);
+  });
+  test('Should correctly sort single value or empty array', () => {
+    expect(selectionSort(array4)).toEqual([0]);
+    expect(selectionSort(emptyArray)).toEqual([]);
+  });
+});
+
