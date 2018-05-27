@@ -9,6 +9,8 @@ const array2 = [-6, -3, -800, -2100, -23, -14, -34];
 const array3 = [6, 3, 800, 2100, 23, 0, -14, -34];
 const array4 = [0];
 const emptyArray = [];
+const mixedArray = ['string!', 30, 1, 15, 'another string', 40, -2, 'foo', false, 7];
+const aString = 'Hello';
 
 describe('Bubble sort', () => {
   test('Should correctly sort array of positive numbers', () => {
@@ -23,6 +25,10 @@ describe('Bubble sort', () => {
   test('Should correctly sort single value or empty array', () => {
     expect(bubbleSort(array4)).toEqual([0]);
     expect(bubbleSort(emptyArray)).toEqual([]);
+  });
+  test('Invalid inputs', () => {
+    expect(bubbleSort(mixedArray)).toEqual(['string!', 1, 15, 30, 'another string', -2, 40, 'foo', false, 7]);
+    expect(bubbleSort(aString)).toEqual(aString);
   });
 });
 
@@ -40,6 +46,10 @@ describe('Insertion sort', () => {
     expect(insertionSort(array4)).toEqual([0]);
     expect(insertionSort(emptyArray)).toEqual([]);
   });
+  test('Invalid inputs', () => {
+    expect(insertionSort(mixedArray)).toEqual(['string!', 1, 15, 30, 'another string', -2, 40, 'foo', false, 7]);
+    expect(insertionSort(aString)).toEqual(aString);
+  });
 });
 
 describe('Selection sort', () => {
@@ -55,6 +65,10 @@ describe('Selection sort', () => {
   test('Should correctly sort single value or empty array', () => {
     expect(selectionSort(array4)).toEqual([0]);
     expect(selectionSort(emptyArray)).toEqual([]);
+  });
+  test('Invalid inputs', () => {
+    expect(selectionSort(mixedArray)).toEqual(['another string', -2, false, 1, 'foo', 7, 15, 'string!', 30, 40]);
+    expect(selectionSort(aString)).toEqual(aString);
   });
 });
 
