@@ -1,20 +1,39 @@
-![cf](https://i.imgur.com/7v5ASc8.png) Lab 30: Basic Sorting
-======
+**Author**: Daniel Shelton
 
-## Submission Instructions
-* Work in a fork of this repository
-* Work in a branch on your fork
-* Open a pull request to this repository
-* Submit on canvas a question and observation, how long you spent, and a link to your pull request
+**Version**: 1.0.0
 
-## Feature Tasks  
-### Sorting Method
-Research and implement the following Sorting Methods:
-* [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort)
-* [Insertion Sort](https://en.wikipedia.org/wiki/Insertion_sort)
-* [Selection Sort](https://en.wikipedia.org/wiki/Selection_sort)
+# Overview
+This application is composed of 3 array-sorting functions with accompanying test suites.
 
-Your function should take an integer array a a single argument and sort it in-place (e.g. mutate the array). You can use helper functions if you need extra arguments in your sorting procedure.
+# Methods
+For each of the following methods, the expected input is an array of integers, if the method is called without an input parameter OR if the method is called with an array that contains any value whose data-type is not that of a number, then the method will throw an error.
 
-## Documentation
-In your README.md describe the exported values of each module you have defined. Every function description should include it's airty (expected number of paramiters), the expected data for each paramiter (data-type and limitations), and it's behavior (for both valid and invalued use). Feel free to write any additional information in your README.md.
+## Bubble Sort Method
+### Algorithm
+The Bubble-sort method repeatedly steps through the array until it has been fully sorted. On each step-through the method will compare each of the adjacent values in the array and will swap them if they're in the incorrect order.
+### Big O Time Complexity
+- Best: O(n)
+- Worst: O(n^2)
+
+## Insertion Sort Method
+### Algorithm
+While the Insertion-sort method iterates through the array, it consumes one input element each repetition, and grows a sorted output list. Each iteration removes one element from the input data, finds the location it belongs within the sorted list, and inserts it there. It repeats until no input elements remain.
+### Big O Time Complexity
+- Best: O(n)
+- Worst: O(n^2)
+
+## Selection Sort Method
+### Algorithm
+The Selection-sort method divides the array into two parts: the sublist of items already sorted and the sublist of items remaining to be sorted. Initially, the sorted sublist is empty and the unsorted sublist is the entire input list. The algorithm proceeds by finding the smallest element in the unsorted sublist, exchanging it with the leftmost unsorted element, and moving the sublist boundaries one element to the right. 
+### Big O Time Complexity
+- Best: O(n^2)
+- Worst: O(n^2)
+
+
+# Testing
+To run tests enter the following into the CLI:
+
+`npm run test`
+
+# Change Log
+05-27-2018 8:30PM - All 3 sort methods complete.
