@@ -1,7 +1,6 @@
 'use strict';
 
 const bubbleSort = (array) => {
-  console.log('before:', array);
   const _swap = (thisArray, index1, index2) => {
     const storedValue = thisArray[index1];
     thisArray[index1] = thisArray[index2];
@@ -20,7 +19,6 @@ const bubbleSort = (array) => {
       }
     }
   }
-  console.log('after:', array);
   return undefined;
 };
 export default bubbleSort;

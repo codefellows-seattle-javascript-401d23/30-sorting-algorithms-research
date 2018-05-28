@@ -1,11 +1,27 @@
-# Sarah
-**Author**: Sorting Algorithms
+# Sorting Algorithms
+**Author**: Sarah Bixler
 **Version**: 1.0.0 
 
-__Bubble Sort:__
-In your README.md describe the exported values of each module you have defined. Every function description should include it's airty (expected number of paramiters), the expected data for each paramiter (data-type and limitations), and it's behavior (for both valid and invalued use). 
-__Insertion Sort__
-__Selection Sort__
+- __Bubble Sort:__ exports a function: _bubbleSort(array)_ that takes an array of integers as a parameter (airty one).
+  - __valid input:__ array of integers, returns array sorted in ascending order
+  - __invalid input:__ empty array, returns thrown error  
+  - __Big O:__ 
+      - Space: 0(*1*) array is mutated in place   
+      - Time:0(*n^2*) where *n* = length of the array, a each index iterates again--> *n* times *n*    
+
+- __Insertion Sort:__  exports a function: _insertionSort(array)_ that takes an array of integers as a parameter (airty one).
+  - __valid input:__ array of integers, returns array sorted in ascending order
+  - __invalid input:__ empty array, returns thrown error  
+  - __Big O:__ 
+      - Space: 0(*1*) array is mutated in place   
+      - Time:0(*n^2*) where *n* = length of the array, a each index iterates again--> *n* times *n*  
+
+- __Selection Sort:__ exports a function: _selectionSort(array)_ that takes an array of integers as a parameter(airty one).
+  - __valid input:__ array of integers, returns array sorted in ascending order
+  - __invalid input:__ empty array, returns thrown error  
+   - __Big O:__ 
+      - Space: 0(*1*) array is mutated in place   
+      - Time:0(*n^2*) where *n* = length of the array, a each index iterates again--> *n* times *n*  
 
 ## Architecture
 Each function takes an integer array as a single argument and sorts it in-place (e.g. mutates the array). 
