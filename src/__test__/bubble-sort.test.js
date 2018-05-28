@@ -1,5 +1,6 @@
 'use strict';
-import bubbleSort from 'bubble-sort';
+
+import bubbleSort from '../bubble-sort';
 
 describe('testing Bubble Sort', ()=> {
   test('it should sort in ascending order', () =>{
