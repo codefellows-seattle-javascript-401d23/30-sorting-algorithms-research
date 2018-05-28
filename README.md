@@ -1,20 +1,15 @@
-![cf](https://i.imgur.com/7v5ASc8.png) Lab 30: Basic Sorting
-======
+### Bubble Sort
+Bubble Sort is a simple sorting algorithm that repeatedly steps through an array of items, compares each pair of adjacent items
+and swaps them if they are in the wrong order. 
 
-## Submission Instructions
-* Work in a fork of this repository
-* Work in a branch on your fork
-* Open a pull request to this repository
-* Submit on canvas a question and observation, how long you spent, and a link to your pull request
+The Bubble Sort algorithm takes an array with an arity of 1.
 
-## Feature Tasks  
-### Sorting Method
-Research and implement the following Sorting Methods:
-* [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort)
-* [Insertion Sort](https://en.wikipedia.org/wiki/Insertion_sort)
-* [Selection Sort](https://en.wikipedia.org/wiki/Selection_sort)
+### Insertion Sort
+Insertion sort is a simple sorting algorithm that builds the final sorted array one item at a time. It is super ineffecient on large arrays. 
 
-Your function should take an integer array a a single argument and sort it in-place (e.g. mutate the array). You can use helper functions if you need extra arguments in your sorting procedure.
+The insertion sort algorithm takes an array with an arity of 1.
 
-## Documentation
-In your README.md describe the exported values of each module you have defined. Every function description should include it's airty (expected number of paramiters), the expected data for each paramiter (data-type and limitations), and it's behavior (for both valid and invalued use). Feel free to write any additional information in your README.md.
+### Selection Sort
+The selection sort algorithm sorts an array by repeatedly finding the minimum element from the unsorted part (on the right) and putting it at the beginning (left).
+
+The selection sort algorithm takes an array with an arity of 1. 
