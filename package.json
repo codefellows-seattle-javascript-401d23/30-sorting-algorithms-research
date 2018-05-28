@@ -1,0 +1,25 @@
+{
+  "name": "30-sorting-algorithms-research",
+  "version": "1.0.0",
+  "description": "**Author**: Sorting Algorithms **Version**: 1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "jest": "^23.0.1",
+    "npm": "^6.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarasaurus/30-sorting-algorithms-research.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sarasaurus/30-sorting-algorithms-research/issues"
+  },
+  "homepage": "https://github.com/sarasaurus/30-sorting-algorithms-research#readme"
+}
