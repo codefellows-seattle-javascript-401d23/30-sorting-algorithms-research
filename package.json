@@ -1,0 +1,31 @@
+{
+  "name": "30-sorting-algorithms-research",
+  "version": "1.0.0",
+  "description": "![cf](https://i.imgur.com/7v5ASc8.png) Lab 30: Basic Sorting\r ======",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage --watchAll",
+    "watch": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielvportlandia/30-sorting-algorithms-research.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielvportlandia/30-sorting-algorithms-research/issues"
+  },
+  "homepage": "https://github.com/danielvportlandia/30-sorting-algorithms-research#readme",
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jest": "^21.16.1",
+    "jest": "^23.0.1"
+  }
+}
