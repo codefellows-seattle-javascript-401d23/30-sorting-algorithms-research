@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "eslint . && jest --verbose --coverage --forceExit --runInBand --detectOpenHandles",
+    "simpletest": "jest --verbose --coverage --forceExit --runInBand --detectOpenHandles",
     "lint": "eslint ."
   },
   "repository": {
