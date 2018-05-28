@@ -1,20 +1,33 @@
-![cf](https://i.imgur.com/7v5ASc8.png) Lab 30: Basic Sorting
-======
+# LAB 30 Basic Sorting
 
-## Submission Instructions
-* Work in a fork of this repository
-* Work in a branch on your fork
-* Open a pull request to this repository
-* Submit on canvas a question and observation, how long you spent, and a link to your pull request
+**Author**: Joshua Fredrickson
 
-## Feature Tasks  
-### Sorting Method
-Research and implement the following Sorting Methods:
-* [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort)
-* [Insertion Sort](https://en.wikipedia.org/wiki/Insertion_sort)
-* [Selection Sort](https://en.wikipedia.org/wiki/Selection_sort)
+**Version**: 1.0.0 
 
-Your function should take an integer array a a single argument and sort it in-place (e.g. mutate the array). You can use helper functions if you need extra arguments in your sorting procedure.
+Lab 30 is a Store API that accepts HTTP CRUD requests into a Mongo Data Base.
 
-## Documentation
-In your README.md describe the exported values of each module you have defined. Every function description should include it's airty (expected number of paramiters), the expected data for each paramiter (data-type and limitations), and it's behavior (for both valid and invalued use). Feel free to write any additional information in your README.md.
+
+To use the Lab 30 application, [Node.js](https://nodejs.org/en/), [npm](https://www.npmjs.com/) 
+(Node Package manager), and [Mongo DB](https://docs.mongodb.com/manual/installation/)  will need
+ to be locally installed.  Once Node.js, npm, Mongo DB have been installed, install the Lab 30 
+ files.  
+ Prior to starting the Lab 30 application, from the command line while you are in the Lab 30 file 
+ folder, enter the command `npm i`.  This will download all needed dependencies for the 
+ application to run.   
+
+
+This application was deployed with the following technologies.
+Node.js, npm, body-parser, dotenv, express, faker, mongoose, winston, babel, superagent, 
+http-errors, jest, eslint, JavaScript
+    
+SERVER ENDPOINTS 
+POST /api/store
+GET /api/shoes/:id
+PUT /api/shoes/:id
+DELETE /api/shoes/:id
+
+
+05-02-2018  4:30pm  first commit, scaffolding tests not passing
+
+
+Special thanks to all of the Code Fellows staff and fellow 401-d23 students.
