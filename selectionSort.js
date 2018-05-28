@@ -1,3 +1,5 @@
+// Big O - O(n2)
+
 const array = [34, 203, 3, 746, 200, 984, 198, 764, 9];
 
 function swap(array, firstIndex, secondIndex){
