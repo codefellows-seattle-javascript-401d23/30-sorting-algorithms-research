@@ -10,6 +10,7 @@ const bubbleSort = (array) => {
   while (modified) {
     modified = false;
     for (let i = 0; i < len; i++) {
+      if (typeof array[i] !== 'number') throw new Error('input must only contain numbers');
       if (array[i] > array[i + 1]) {
         const temp = array[i];
         array[i] = array[i + 1];

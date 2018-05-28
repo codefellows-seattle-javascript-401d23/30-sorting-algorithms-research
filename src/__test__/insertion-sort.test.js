@@ -12,4 +12,7 @@ describe('insertion-sort.js', () => {
   test('should err out if no list passed', () => {
     expect(() => { insertionSort(); }).toThrow('missing input');
   });
+  test('should err out if array contains non-numbers', () => {
+    expect(() => { insertionSort([1, 6, 'ten', true]); }).toThrow('input must only contain numbers');
+  });
 });

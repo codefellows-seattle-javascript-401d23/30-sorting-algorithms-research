@@ -12,4 +12,7 @@ describe('bubble-sort.js', () => {
   test('should err out with missing input', () => {
     expect(() => { bubbleSort(); }).toThrow('missing input');
   });
+  test('should err out if array contains non-numbers', () => {
+    expect(() => { bubbleSort([1, 6, 'ten', true]); }).toThrow('input must only contain numbers');
+  });
 });

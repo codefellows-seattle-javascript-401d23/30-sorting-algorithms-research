@@ -12,5 +12,8 @@ describe('selection-sort.js', () => {
   test('should err out if no array passed', () => {
     expect(() => { selectionSort(); }).toThrow('missing input');
   });
+  test('should err out if array contains non-numbers', () => {
+    expect(() => { selectionSort([1, 6, 'ten', true]); }).toThrow('input must only contain numbers');
+  });
 });
 

@@ -7,6 +7,7 @@ const insertionSort = (array) => {
   if (!array) throw new Error('missing input');
   const len = array.length;
   for (let i = 1; i < len; i++) {
+    if (typeof array[i] !== 'number') throw new Error('input must only contain numbers');
     for (let j = 0; j < i; j++) {
       if (array[i] < array[j]) {
         const numToSort = array.splice(i, 1)[0];
