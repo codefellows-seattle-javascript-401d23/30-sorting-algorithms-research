@@ -3,13 +3,18 @@
   "version": "1.0.0",
   "description": "**Author**: Sorting Algorithms **Version**: 1.0.0",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "eslint-plugin-jest": "^21.17.0"
+  },
   "devDependencies": {
     "eslint": "^4.19.1",
     "jest": "^23.0.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage",
+    "test bubble": "jest --coverage bubble-sort.test.js",
+    "test insert": "jest --coverage insertion-sort.test.js",
+    "test select": "jest --coverage select-sort.test.js"
   },
   "repository": {
     "type": "git",
