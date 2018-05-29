@@ -9,15 +9,12 @@ const bubbleSort = module.exports = (inputArray) => { // eslint-disable-line
     swapped = false;
     for (let i = 1; i < len; i++) {
       if (inputArray[i - 1] > inputArray[i]) {
-        if (inputArray[i - 1] > inputArray[i]) {
-          temp = inputArray[i];
-          inputArray[i] = inputArray[i - 1];
-          inputArray[i - 1] = temp;
-        }
+        temp = inputArray[i];
+        inputArray[i] = inputArray[i - 1];
+        inputArray[i - 1] = temp;
         swapped = true;
       }
     }
-  }
-
+  } 
   return inputArray;
 };
