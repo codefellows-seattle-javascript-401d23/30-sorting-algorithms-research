@@ -8,7 +8,7 @@ const bubbleSort = (array) => {
     return undefined;
   };
   if (!array.length) {
-    throw new Error('the array must be populated');
+    throw Error('the array must be populated');
   } else {
     const length = array.length + 1;
     for (let i = length; i >= 0; i--) {

@@ -2,7 +2,7 @@
 
 const insertionSort = (array) => {
   if (!array.length) {
-    throw new Error('the array must be populated');
+    throw Error('the array must be populated');
   } else {
     const { length } = array;
     let iterator = 1;

@@ -8,20 +8,22 @@ const selectionSort = (array) => {
     return undefined;
   };
   if (!array.length) {
-    throw new Error('input must be an array');
-  }
-  const { length } = array;
-  let iMin = null;
-  for (let j = 0; j < length - 1; j++) {
-    iMin = j;
-    for (let i = j + 1; i < length; i++) {
-      if (array[i] < array[iMin]) {
-        iMin = i;
+    throw Error('array must be populated');
+  } else {
+    const { length } = array;
+    let iMin = null;
+    for (let j = 0; j < length - 1; j++) {
+      iMin = j;
+      for (let i = j + 1; i < length; i++) {
+        if (array[i] < array[iMin]) {
+          iMin = i;
+        }
+      }
+      if (iMin !== j) {
+        _swap(array, j, iMin);
       }
     }
-    if (iMin !== j) {
-      _swap(array, j, iMin);
-    }
   }
+
 };
 export default selectionSort;

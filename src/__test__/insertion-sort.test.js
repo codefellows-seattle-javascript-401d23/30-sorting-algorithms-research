@@ -9,4 +9,10 @@ describe('testing Insertion Sort', () => {
     insertionSort(testArray);
     expect(testArray).toEqual(sortedArray);
   });
+  test('it should throw error', () => {
+    const testArray = [];
+    expect(() => {
+      insertionSort(testArray);
+    }).toThrow();
+  });
 });

@@ -9,4 +9,10 @@ describe('testing Bubble Sort', () => {
     bubbleSort(testArray);
     expect(testArray).toEqual(sortedArray);
   });
+  test('it should throw error', () => {
+    const testArray = [];
+    expect(() => {
+      bubbleSort(testArray);
+    }).toThrow();
+  });
 });

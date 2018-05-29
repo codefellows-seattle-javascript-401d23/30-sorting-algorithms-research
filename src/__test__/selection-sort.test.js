@@ -9,4 +9,11 @@ describe('testing Selection Sort', () => {
     selectionSort(testArray);
     expect(testArray).toEqual(sortedArray);
   });
+  test('it should throw error', () => {
+    const testArray = [];
+    expect(() => {
+      selectionSort(testArray);
+    }).toThrow();
+  });
 });
+
