@@ -1,0 +1,23 @@
+{
+  "name": "30-sorting-algorithms-research",
+  "version": "1.0.0",
+  "description": "![cf](https://i.imgur.com/7v5ASc8.png) Lab 30: Basic Sorting\r ======",
+  "main": "bubble.js",
+  "dependencies": {
+    "jest": "^23.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spinaltaper/30-sorting-algorithms-research.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spinaltaper/30-sorting-algorithms-research/issues"
+  },
+  "homepage": "https://github.com/spinaltaper/30-sorting-algorithms-research#readme"
+}
