@@ -1,20 +1,13 @@
-![cf](https://i.imgur.com/7v5ASc8.png) Lab 30: Basic Sorting
-======
 
-## Submission Instructions
-* Work in a fork of this repository
-* Work in a branch on your fork
-* Open a pull request to this repository
-* Submit on canvas a question and observation, how long you spent, and a link to your pull request
 
-## Feature Tasks  
-### Sorting Method
-Research and implement the following Sorting Methods:
-* [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort)
-* [Insertion Sort](https://en.wikipedia.org/wiki/Insertion_sort)
-* [Selection Sort](https://en.wikipedia.org/wiki/Selection_sort)
+## Bubble Sort
+* This module takes an array as a single argument and returns a new sorted array.
+Bubble sort uses inner loop to compare values of each 2 elements with index j and j+1 and swap them if value of index j+1 element is smaller than element with index j. The outer loop repeats the j loop n (n = number of elements in the array) amount of times until all the elements are sorted.
 
-Your function should take an integer array a a single argument and sort it in-place (e.g. mutate the array). You can use helper functions if you need extra arguments in your sorting procedure.
+## Insertion Sort
+This module takes an array as a single argument and returns a new sorted array. Insertion sort uses 2 for loops, first loop takes the value of the array starting from index 1 and assigns it to temporary value(sorted) and the other loop takes the value right before that element to compare them. If the array[i] element is smaller than array[j] then array[1] gets inserted in front of array[j] until the condition is no longer met. The loop goes through all the array elements comparing 2 elements each time. 
 
-## Documentation
-In your README.md describe the exported values of each module you have defined. Every function description should include it's airty (expected number of paramiters), the expected data for each paramiter (data-type and limitations), and it's behavior (for both valid and invalued use). Feel free to write any additional information in your README.md.
+ 
+### Selection Sort
+This module takes an array as a single argument and returns a new sorted array. Selection sort uses 2 loops and running outer loop we define the first element of the array to be the minimum value(minValue). When we travel through the array elements we compare other values with the first one and if any other value is smaller than the first element of the array(minValue) then they swap positions inside array and repeat this through the rest of elements until there is nothing to compare and swap.
+
