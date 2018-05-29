@@ -1,6 +1,6 @@
 'use strict';
 
-import insertionSort from '../insertion-sort';
+import insertionSort from '../lib/insertion-sort';
 
 describe('testing Insertion Sort', () => {
   test('it should sort in ascending order', () => {
@@ -15,4 +15,10 @@ describe('testing Insertion Sort', () => {
       insertionSort(testArray);
     }).toThrow();
   });
+  // test('it should throw error for invalid input', () => {
+  //   const testArray = [1, 'a', 'b'];
+  //   expect(() => {
+  //     insertionSort(testArray);
+  //   }).toThrowError();
+  // });
 });

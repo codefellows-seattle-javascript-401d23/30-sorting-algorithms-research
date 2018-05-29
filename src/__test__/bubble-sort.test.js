@@ -1,6 +1,6 @@
 'use strict';
 
-import bubbleSort from '../bubble-sort';
+import bubbleSort from '../lib/bubble-sort';
 
 describe('testing Bubble Sort', () => {
   test('it should sort in ascending order', () => {
@@ -9,10 +9,16 @@ describe('testing Bubble Sort', () => {
     bubbleSort(testArray);
     expect(testArray).toEqual(sortedArray);
   });
-  test('it should throw error', () => {
+  test('it should throw error for no array', () => {
     const testArray = [];
     expect(() => {
       bubbleSort(testArray);
     }).toThrow();
   });
+  // test('it should throw error for invalid input', () => {
+  //   const testArray = [1, 'a', 'b'];
+  //   expect(() => {
+  //     bubbleSort(testArray);
+  //   }).toThrowError();
+  // });
 });
