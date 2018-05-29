@@ -15,8 +15,9 @@ This application was deployed with the following technologies.
 JavaScript (ES6)
 
 
+## Change Log
+5-28-2018 03:49PM Scaffolding and Bubble Sort completed
+5-28-2018 5:19pm final commit
 
-05-02-2018  4:30pm  first commit, scaffolding tests not passing
-
-
+## Credits and Collaborations
 Special thanks to all of the Code Fellows staff and fellow 401-d23 students.
