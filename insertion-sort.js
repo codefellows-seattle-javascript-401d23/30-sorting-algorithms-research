@@ -14,4 +14,5 @@ let len = array.length;
   return array;
 }
 
+module.export = insertionSort();
 console.log(insertionSort(array));
