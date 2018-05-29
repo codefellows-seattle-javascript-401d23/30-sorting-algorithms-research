@@ -1,3 +1,5 @@
+'use strict';
+
 const bubbleSort = (array) => {
   let length = array.length;
 
@@ -13,5 +15,6 @@ const bubbleSort = (array) => {
   return array;
 }
 
+// bubbleSort([2,1,10,14,21,22,13]);
 
-bubbleSort([2,1,10,14,21,22,13]);
+export { bubbleSort };
