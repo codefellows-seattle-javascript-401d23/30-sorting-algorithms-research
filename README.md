@@ -34,3 +34,8 @@ The sorting algorithms needs to be implemented to take an airty of one array and
 - sorting-algo.test.js
     - The test suite contains three simple tests for each sorting module.  The test compares an unsorted array input into each method and expects the returned value to be a sorted array.
 
+### References
+- http://blog.benoitvallon.com/sorting-algorithms-in-javascript/sorting-algorithms-in-javascript/
+- http://nick.balestra.ch/2015/swapping-array-elements-in-place/
+
+
