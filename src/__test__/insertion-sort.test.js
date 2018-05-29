@@ -15,10 +15,10 @@ describe('testing Insertion Sort', () => {
       insertionSort(testArray);
     }).toThrow();
   });
-  // test('it should throw error for invalid input', () => {
-  //   const testArray = [1, 'a', 'b'];
-  //   expect(() => {
-  //     insertionSort(testArray);
-  //   }).toThrowError();
-  // });
+  test('it should throw error for invalid input', () => {
+    const testArray = [1, 'a', 'b'];
+    expect(() => {
+      insertionSort(testArray);
+    }).toThrowError();
+  });
 });

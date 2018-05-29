@@ -10,8 +10,8 @@ const bubbleSort = (array) => {
   if (!array.length) throw Error('the array must be populated');
   const length = array.length + 1;
   for (let i = length; i >= 0; i--) {
-    // if (typeof array[i] !== 'number') throw Error('input must contain only numbers'); // why doesnt this work?
     for (let j = 0; j <= length; j++) {
+      console.log(array);
       if (array[j - 1] > array[j]) {
         _swap(array, j - 1, j);
       }
