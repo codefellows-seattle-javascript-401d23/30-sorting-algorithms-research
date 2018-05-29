@@ -1,6 +1,6 @@
 'use strict';
 
-import selectionSort from '../selection-sort';
+import selectionSort from '../lib/selection-sort';
 
 describe('testing Selection Sort', () => {
   test('it should sort in ascending order', () => {
@@ -15,5 +15,11 @@ describe('testing Selection Sort', () => {
       selectionSort(testArray);
     }).toThrow();
   });
+  // test('it should throw error for invalid input', () => {
+  //   const testArray = [1, 'a', 'b'];
+  //   expect(() => {
+  //     selectionSort(testArray);
+  //   }).toThrowError();
+  // });
 });
 
