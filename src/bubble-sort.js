@@ -1,11 +1,24 @@
 'use strict';
-import bubbleSort from 'bubble-sort';
 
-describe('testing Bubble Sort', ()=> {
-  test('it should sort in ascending order', () =>{
-    const testArray = [5,9,4,1,3,2,6,7,8];
-    const sortedArray = [1,2,3,4,5,6,7,8,9];
-    bubbleSort(testArray);
-    expect(testArray).toEqual(sortedArray)
-  })
-})
+const bubbleSort = (array) => {
+  const _swap = (thisArray, index1, index2) => {
+    const storedValue = thisArray[index1];
+    thisArray[index1] = thisArray[index2];
+    thisArray[index2] = storedValue;
+    return undefined;
+  };
+  if (!array.length) {
+    throw Error('the array must be populated');
+  } else {
+    const length = array.length + 1;
+    for (let i = length; i >= 0; i--) {
+      for (let j = 0; j <= length; j++) {
+        if (array[j - 1] > array[j]) {
+          _swap(array, j - 1, j);
+        }
+      }
+    }
+  }
+  return undefined;
+};
+export default bubbleSort;

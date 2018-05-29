@@ -3,13 +3,25 @@
   "version": "1.0.0",
   "description": "**Author**: Sorting Algorithms **Version**: 1.0.0",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "babel-eslint": "^8.2.3",
     "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jest": "^21.17.0",
+    "eslint-plugin-react": "^7.8.2"
+  },
+  "devDependencies": {
     "jest": "^23.0.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "test": "jest --coverage",
+    "test bubble": "jest --coverage bubble-sort.test.js",
+    "test insert": "jest --coverage insertion-sort.test.js",
+    "test select": "jest --coverage select-sort.test.js"
   },
   "repository": {
     "type": "git",
