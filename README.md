@@ -1,20 +1,12 @@
-![cf](https://i.imgur.com/7v5ASc8.png) Lab 30: Basic Sorting
-======
+# Lab 30 Research Data Sorting 
+The objective of this lab is to introduce the concepts of 3 new styles of sorting algorithms. All 3 of the algorithms will take a single argument as an integer array as input and return the sorted and modified in place array as the output of the function. 
 
-## Submission Instructions
-* Work in a fork of this repository
-* Work in a branch on your fork
-* Open a pull request to this repository
-* Submit on canvas a question and observation, how long you spent, and a link to your pull request
+## Bubble Sort: 
+This algorithm has a time Big O of (n^2) since the worst/average case is that you have to pass through the entire array multiple times in order to ensure it is properly sorted. 
+The number of parameters for this function should be 1 an integer filled array to be sorted (Not recommended for large data-sets since this is an inefficient method to sort). 
 
-## Feature Tasks  
-### Sorting Method
-Research and implement the following Sorting Methods:
-* [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort)
-* [Insertion Sort](https://en.wikipedia.org/wiki/Insertion_sort)
-* [Selection Sort](https://en.wikipedia.org/wiki/Selection_sort)
+## Insert Sort: 
+The algorithm has a time Big O of (n^2) since it has nested loops. The method involves checking to see if the current value is higher or lower than the value of the array at the current index. At which point the algorithm will insert the current value into the array. Invalid use will return an incorrect return value. 
 
-Your function should take an integer array a a single argument and sort it in-place (e.g. mutate the array). You can use helper functions if you need extra arguments in your sorting procedure.
-
-## Documentation
-In your README.md describe the exported values of each module you have defined. Every function description should include it's airty (expected number of paramiters), the expected data for each paramiter (data-type and limitations), and it's behavior (for both valid and invalued use). Feel free to write any additional information in your README.md.
+## Select Sort: 
+The algorithm has a time Big O of (n^2) since it has nested loops. The method involves checking to see if the current value is higher or lower than the value of the array at the current index. At which point the algorithm will insert the current value into the array. Invalid use will return an incorrect return value. 
