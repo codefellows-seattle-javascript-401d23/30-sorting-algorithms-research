@@ -1,20 +1,25 @@
-![cf](https://i.imgur.com/7v5ASc8.png) Lab 30: Basic Sorting
-======
+## Lab 30: Sorting Algorithms Research
 
-## Submission Instructions
-* Work in a fork of this repository
-* Work in a branch on your fork
-* Open a pull request to this repository
-* Submit on canvas a question and observation, how long you spent, and a link to your pull request
+### Bubble Sort
 
-## Feature Tasks  
-### Sorting Method
-Research and implement the following Sorting Methods:
-* [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort)
-* [Insertion Sort](https://en.wikipedia.org/wiki/Insertion_sort)
-* [Selection Sort](https://en.wikipedia.org/wiki/Selection_sort)
+`bubbleSort(array)`
+- Arity of 1
+- Takes in an array of numbers
+- If no array passed, will return `undefined`
+- Will return array values in place in sequential order
 
-Your function should take an integer array a a single argument and sort it in-place (e.g. mutate the array). You can use helper functions if you need extra arguments in your sorting procedure.
+### Insertion Sort
 
-## Documentation
-In your README.md describe the exported values of each module you have defined. Every function description should include it's airty (expected number of paramiters), the expected data for each paramiter (data-type and limitations), and it's behavior (for both valid and invalued use). Feel free to write any additional information in your README.md.
+`insertionSort(array)`
+- Arity of 1
+- Takes in an array of numbers
+- If no array passed, will return `undefined`
+- Will return array values in place in sequential order
+
+### Selection Sort
+
+`selectionSort(array)`
+- Arity of 1
+- Takes in an array of numbers
+- If no array passed, will return `undefined`
+- Will return array values in place in sequential order
