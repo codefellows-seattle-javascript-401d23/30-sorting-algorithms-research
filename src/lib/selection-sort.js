@@ -14,14 +14,16 @@ const selectionSort = (array) => {
     let iMin = null;
     for (let j = 0; j < length - 1; j++) {
       iMin = j;
-      // if (typeof iMin !== 'number') throw Error('input must contain only numbers'); // why doesnt this work?
-      for (let i = j + 1; i < length; i++) {
-        if (array[i] < array[iMin]) {
-          iMin = i;
+      if (typeof array[j] !== 'number') throw Error('input must contain only numbers');
+      else {
+        for (let i = j + 1; i < length; i++) {
+          if (array[i] < array[iMin]) {
+            iMin = i;
+          }
         }
-      }
-      if (iMin !== j) {
-        _swap(array, j, iMin);
+        if (iMin !== j) {
+          _swap(array, j, iMin);
+        }
       }
     }
   }

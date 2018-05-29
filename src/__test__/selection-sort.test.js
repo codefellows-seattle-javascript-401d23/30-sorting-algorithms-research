@@ -15,11 +15,11 @@ describe('testing Selection Sort', () => {
       selectionSort(testArray);
     }).toThrow();
   });
-  // test('it should throw error for invalid input', () => {
-  //   const testArray = [1, 'a', 'b'];
-  //   expect(() => {
-  //     selectionSort(testArray);
-  //   }).toThrowError();
-  // });
+  test('it should throw error for invalid input', () => {
+    const testArray = [1, 'a', 'b'];
+    expect(() => {
+      selectionSort(testArray);
+    }).toThrowError();
+  });
 });
 
