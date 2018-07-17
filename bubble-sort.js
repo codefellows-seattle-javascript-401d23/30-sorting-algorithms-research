@@ -12,7 +12,7 @@ function bubbleSort(array) {
         array[j+1] = temp;
       }
     }
-	}
+  }
   return array;
 }
 
