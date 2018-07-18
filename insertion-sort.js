@@ -8,8 +8,8 @@ function insertionSort(array) {
       let temp = array[i];
       for (let j = i - 1; j >= 0 && (array[j] > temp); j--) {
 	array[j + 1] = array[j];
-	array[j] = temp;
-      }     
+      } 
+      array[i] = temp;
 }
   return array;
 }
