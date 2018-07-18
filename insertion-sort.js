@@ -9,7 +9,7 @@ function insertionSort(array) {
       for (let j = i - 1; j >= 0 && (array[j] > temp); j--) {
 	array[j + 1] = array[j];
       } 
-      array[i] = temp;
+      array[i+1] = temp;
 }
   return array;
 }
